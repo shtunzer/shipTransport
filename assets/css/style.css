@@ -873,3 +873,63 @@ html,body{
     font-size: 64px;
     text-transform: uppercase;
 }
+
+/* VACANCIES */
+
+.vacancies__typeShip-title{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 45px;
+    margin-top: 60px;
+}
+
+.vacancies__typeShip-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vacancies__typeShip-card{
+    padding: 35px 40px;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    width: 416px;
+}
+
+.vacancies__typeShip-card + .vacancies__typeShip-card + .vacancies__typeShip-card + .vacancies__typeShip-card{
+    margin-top: 25px;
+}
+
+.vacancies__typeShip-card-title{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.vacancies__typeShip-card-img{
+    margin-right: 15px; 
+    display: block;
+}
+
+.vacancies__typeShip-card-text{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #333333;
+}
+
+.vacancies__typeShip-card-link{
+    display: block;
+    padding: 10px 15px 9px;
+    margin-top: 35px;
+    background: #133D8D;
+    color: #fff;
+    max-width: 105px;
+    text-align: center;
+    font-size: 13px;
+}
