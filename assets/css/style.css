@@ -607,6 +607,10 @@ html,body{
     background: url(../images/prev.png);
 }
 
+.securitySwiper-button-prev-2{
+    display: none;
+}
+
 .securitySwiper{
     max-width: 1076px;
 }
@@ -847,7 +851,7 @@ html,body{
     background: #133D8D;
     color: #fff;
     max-height: 620px;
-    width: 524px;
+    max-width: 524px;
 }
 
 .activities-createPro-title{
@@ -934,6 +938,89 @@ html,body{
     font-size: 13px;
 }
 
+/* BURGER */
+
+.burger-btn{
+    display: none;
+}
+
+.burger-span + .burger-span{
+    margin-top: 7px;
+}
+
+.burger-span{
+    width: 34px;
+    height: 3px;
+    background: #FFFFFF;
+    display: block;
+    border-radius: 2px;
+}
+
+.burger__menu{
+    width: 320px;
+    height: 100vh;
+    margin-left: auto;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s;
+    transform: translateX(100%);
+    background: #fff;
+    color: #333333;
+}
+
+.burger__menu.--show{
+    transform: translateX(0%);
+}
+
+.burger__menu-btn{
+    display: block;
+    margin: 20px auto;
+}
+
+.burger-img{
+    display: block;
+}
+
+.burger-link{
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+}
+
+.burger__form{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    max-width: 300px;
+}
+
+.burger__form-input{
+    width: 265px;
+    height: 35px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #133D8D;
+    padding-left: 10px;
+}
+
+.burger__form-btn{
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #133D8D;
+}
+
+.burger__form-img{
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* MEDIA */
 
 @media (max-width: 1280px){
@@ -949,6 +1036,60 @@ html,body{
     .publication-card + .publication-card + .publication-card,
     .news-card + .news-card + .news-card{
         margin-top: 30px;
+    }   
+    .vacancies__typeShip-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .vacancies__typeShip-card + .vacancies__typeShip-card + .vacancies__typeShip-card{
+        margin-top: 30px;
+    }
+    .vacancies__typeShip-card{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1230px){
+    .history__inner{
+        display: block;
+    }
+    .history__textBox{
+        display: block;
+        margin: 0 auto;
+    }
+    .history__customBox{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .history__inner{
+        padding-bottom: 220px;
+    }
+}
+
+@media (max-width: 1220px){
+    .activities__content{
+        display: block;
+    }
+    .activities-createProBox{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .projectsSlide-textBox-link{
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 1050px){
+    .projectsSlide-imgBox-text,
+    .projectsSlide-imgBox-title{
+        max-width: 465px;
+    }
+    .projectsSlide-imgBox{
+        padding-top: 340px;
+        max-height: 600px;
     }
 }
 
@@ -957,14 +1098,46 @@ html,body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .footer__box{
+    .footer__blockbox{
         margin: 0 auto;
     }
-    .footer__box + .footer__box + .footer__box{
+    .footer__blockbox + .footer__blockbox + .footer__blockbox{
         margin-top: 30px;
     }
     .footer__contacts-text{
         text-align: left;
+    }
+}
+
+@media (max-width: 900px){
+    .header__list,
+    .header__contacts{
+        display: none;
+    }
+    .burger-btn{
+        display: block;
+    }
+}
+
+@media (max-width: 880px){
+    .vacancies__typeShip-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .vacancies__typeShip-card + .vacancies__typeShip-card{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 775px){
+    .custom__list-item,
+    .custom__list{
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 695px){
+    .projectsSlide-imgBox{
+        padding-top: 250px;
     }
 }
 
@@ -977,14 +1150,84 @@ html,body{
     .publication-card + .publication-card{
         margin-top: 30px;
     }
+    .history__customBox{
+        width: 400px;
+        height: 255px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .custom__list{
+        left: 0;
+        top: 140px;
+    }
+    .custom-date{
+        font-size: 20px;
+    }
+    .custom-date-1{
+        top: -5px;
+        left: 320px;
+    }
+    .custom-date-2{
+        left: 265px;
+        top: 50px;
+    }
+    .custom-date-3{
+        top: 57px;
+        left: 160px;
+    }
+    .custom-date-4{
+        left: 92px;
+        top: 110px;
+    }
+    .custom-date-5{
+        top: 120px;
+        left: 30px;
+    }
 }
 
 @media (max-width: 650px){
     .footer__content{
         grid-template-columns: repeat(1,1fr);
     }
-    .footer__box + .footer__box{
+    .footer__blockbox + .footer__blockbox{
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 615px){
+    .projectsSlide{
+        display: block;
+    }
+    .projectsSlide-textBox{
+        width: 480px;
+    }
+}
+
+@media (max-width: 560px){
+    .activities-createProBox{
+        max-height: 1050px;
+    }
+    .activities-createPro-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .activities-createPro-card{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px){
+    .projectsSlide-imgBox{
+        width: 240px;
+        margin: 0 auto;
+    }
+    .projectsSlide-textBox{
+        width: 210px;
+        margin: 0 auto;
+    }
+    .projects__textBox{
+        display: block;
     }
 }
 
@@ -994,8 +1237,72 @@ html,body{
     }
 }
 
+@media (max-width: 490px){
+    .history__customBox{
+        width: 300px;
+        height: 191px;
+    }
+    .history__inner{
+        padding-bottom: 260px;
+    }
+    .custom__list{
+        top: 100px;
+    }
+    .custom-date{
+        font-size: 18px;
+        cursor: default;
+    }
+    .custom-date-1{
+        top: -5px;
+        left: 230px;
+    }
+    .custom-date-2{
+        left: 192px;
+        top: 37px;
+    }
+    .custom-date-3{
+        top: 33px;
+        left: 110px;
+    }
+    .custom-date-4{
+        left: 65px;
+        top: 70px;
+    }
+    .custom-date-5{
+        top: 73px;
+        left: 25px;
+    }
+}
+
+@media (max-width: 430px){
+    .vacancies__typeShip-card{
+        width: 306px;
+    }
+}
+
+@media (max-width: 410px){
+    .contacts__info{
+        margin-left: 10px;
+    }
+}
+
 @media (max-width: 380px){
     .news__textBox{
         display: block;
+    }
+}
+
+@media (max-width: 360px){
+    .history__customBox{
+        width: 300px;
+        height: 191px;
+    }
+    .history__inner{
+        padding-bottom: 260px;
+    }
+    .custom__list{
+        top: 100px;
+        max-width: 290px;
+        margin: 0 auto;
     }
 }
