@@ -1,3 +1,14 @@
+// BURGER
+
+document.getElementById('burger-btn-open').addEventListener('click', function(){
+  document.getElementById('burger__menu').classList.add('--show');
+});
+document.getElementById('burger-btn-hide').addEventListener('click', function(){
+  document.getElementById('burger__menu').classList.remove('--show');
+});
+
+// SWIPERS
+
 var swiper = new Swiper(".firstSwiper", {
     navigation: {
       nextEl: ".firstSwiper-button-next",
@@ -15,6 +26,6 @@ var swiper2 = new Swiper(".projectsSwiper", {
 var swiper3 = new Swiper(".securitySwiper", {
   navigation: {
     nextEl: ".securitySwiper-button-next",
-    prevEl: ".securitySwiper-button-prev",
+    prevEl: ".securitySwiper-button-prev, .securitySwiper-button-prev-2",
   },
 });
